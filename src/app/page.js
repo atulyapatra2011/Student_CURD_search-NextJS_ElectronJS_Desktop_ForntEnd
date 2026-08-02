@@ -9,7 +9,7 @@ export default function Student() {
     const getStudents = async (searchValue = "") => {
         try {
             const response = await fetch(
-                `https://student-curd-search-django-rest-api-19q0.onrender.com/student/?search=${searchValue}`
+                `https://student-curd-search-django-rest-api-19q0.onrender.com/students/?search=${searchValue}`
             );
 
             const data = await response.json();
