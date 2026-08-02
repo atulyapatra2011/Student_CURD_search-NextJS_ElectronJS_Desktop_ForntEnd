@@ -41,7 +41,7 @@ export default function AddStudent() {
         }
 
         try {
-            const response = await fetch("http://localhost:8000/student/", {
+            const response = await fetch("https://student-curd-search-django-rest-api-19q0.onrender.com/student/", {
                 method: "POST",
                 body: data,
             });
