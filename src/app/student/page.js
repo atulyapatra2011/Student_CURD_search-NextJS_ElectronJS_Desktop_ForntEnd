@@ -173,7 +173,7 @@ export default function Student(){
                             <td>{student.address}</td>
                             <td>
                                 <img
-                                    src={`http://localhost:8000/${student.profile_pic}`}
+                                    src={`https://student-curd-search-django-rest-api-19q0.onrender.com/${student.profile_pic}`}
                                     alt={student.first_name}
                                     className="img-thumbnail"
                                     width="60"
