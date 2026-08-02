@@ -51,7 +51,7 @@ export default function Student(){
     useEffect(() => {
         const fetchStudents = async (pageNumber) => {
             try {
-                const response = await fetch(`http://localhost:8000/student/?page=${pageNumber}`);
+                const response = await fetch(`https://student-curd-search-django-rest-api-19q0.onrender.com/student/?page=${pageNumber}`);
 
                 const data = await response.json();
 
@@ -79,7 +79,7 @@ export default function Student(){
         if (!confirmDelete) return;
 
         try {
-            const response = await fetch(`http://localhost:8000/studentlist/${id}/`, {
+            const response = await fetch(`https://student-curd-search-django-rest-api-19q0.onrender.com/studentlist/${id}/`, {
                 method: "DELETE",
             });
 
@@ -117,7 +117,7 @@ export default function Student(){
 
         try {
             const response = await fetch(
-                `http://localhost:8000/studentlist/${formData.id}/`,
+                `https://student-curd-search-django-rest-api-19q0.onrender.com/studentlist/${formData.id}/`,
                 {
                     method: "PUT",
                     body: data, // ✅ Send FormData directly
