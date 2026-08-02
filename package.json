@@ -1,0 +1,27 @@
+{
+  "name": "student_curd",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:next\" \"npm run dev:electron\" ",
+    "dev:next": "next dev",
+    "dev:electron": "wait-on http://localhost:3000 && cross-env NODE_ENV=delelopment electron .",
+    "build": "next build",
+    "start": "next start",
+    "dict": "electron-builder"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "next": "16.2.12",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.4",
+    "cross-env": "^10.1.0",
+    "electron": "^43.2.0",
+    "electron-builder": "^26.15.3",
+    "wait-on": "^9.1.0"
+  }
+}
