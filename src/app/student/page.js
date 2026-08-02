@@ -102,7 +102,7 @@ export default function Student(){
         // console.log(student);
         setFormData(student);
         // setPreview(student.profile_pic); // Existing image URL
-        setPreview(`https://student-curd-search-django-rest-api-19q0.onrender.com/${student.profile_pic}`);
+        setPreview(`https://student-curd-search-django-rest-api-19q0.onrender.com${student.profile_pic}`);
         setShowModal(true);
     };
 
